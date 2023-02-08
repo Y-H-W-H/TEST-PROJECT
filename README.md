@@ -17,4 +17,4 @@
 
 
 Ссылка на проект: 
-https://y-h-w-h.github.io/test-project
+https://y-h-w-h.github.io/TEST-PROJECT
