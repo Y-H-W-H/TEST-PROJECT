@@ -1,0 +1,19 @@
+.root {
+    font-family: 'Roboto', Arial, sans-serif;
+    display: block;
+    width: 300px;
+    margin: 0 auto 0;
+    padding: 0;
+    height: 600px;
+
+    padding: 0;
+    color: #000000;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+}
+
+/*  */
