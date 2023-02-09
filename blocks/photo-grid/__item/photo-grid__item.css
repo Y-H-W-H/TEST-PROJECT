@@ -100,66 +100,40 @@
 }
 
 @keyframes movingText {
-    0% {
-        transform: scale(100%);
-        color: #2D8957;
-        text-shadow: -0 -2px 0 #583a53,
-            0 -2px 0 #583a53,
-            -0 2px 0 #583a53,
-            0 2px 0 #583a53,
-            -2px -0 0 #583a53,
-            2px -0 0 #583a53,
-            -2px 0 0 #583a53,
-            2px 0 0 #583a53,
-            -1px -2px 0 #583a53,
-            1px -2px 0 #583a53,
-            -1px 2px 0 #583a53,
-            1px 2px 0 #583a53,
-            -2px -1px 0 #583a53,
-            2px -1px 0 #583a53,
-            -2px 1px 0 #583a53,
-            2px 1px 0 #583a53,
-            -2px -2px 0 #583a53,
-            2px -2px 0 #583a53,
-            -2px 2px 0 #583a53,
-            2px 2px 0 #583a53,
-            -2px -2px 0 #583a53,
-            2px -2px 0 #583a53,
-            -2px 2px 0 #583a53,
-            2px 2px 0 #583a53
-    }
 
-    50% {
-        transform: scale(90%);
-        color: #F7FABA;
-        text-shadow: -0 -2px 0 #583a53,
-            0 -2px 0 #583a53,
-            -0 2px 0 #583a53,
-            0 2px 0 #583a53,
-            -2px -0 0 #583a53,
-            2px -0 0 #583a53,
-            -2px 0 0 #583a53,
-            2px 0 0 #583a53,
-            -1px -2px 0 #583a53,
-            1px -2px 0 #583a53,
-            -1px 2px 0 #583a53,
-            1px 2px 0 #583a53,
-            -2px -1px 0 #583a53,
-            2px -1px 0 #583a53,
-            -2px 1px 0 #583a53,
-            2px 1px 0 #583a53,
-            -2px -2px 0 #583a53,
-            2px -2px 0 #583a53,
-            -2px 2px 0 #583a53,
-            2px 2px 0 #583a53,
-            -2px -2px 0 #583a53,
-            2px -2px 0 #583a53,
-            -2px 2px 0 #583a53,
-            2px 2px 0 #583a53
+    0%,
+    35% {
+
+        color: aqua;
+        text-shadow: -0 -2px 0 #dd6767,
+            0 -2px 0 #dd6767,
+            -0 2px 0 #dd6767,
+            0 2px 0 #dd6767,
+            -2px -0 0 #dd6767,
+            2px -0 0 #dd6767,
+            -2px 0 0 #dd6767,
+            2px 0 0 #dd6767,
+            -1px -2px 0 #dd6767,
+            1px -2px 0 #dd6767,
+            -1px 2px 0 #dd6767,
+            1px 2px 0 #dd6767,
+            -2px -1px 0 #dd6767,
+            2px -1px 0 #dd6767,
+            -2px 1px 0 #dd6767,
+            2px 1px 0 #dd6767,
+            -2px -2px 0 #dd6767,
+            2px -2px 0 #dd6767,
+            -2px 2px 0 #dd6767,
+            2px 2px 0 #dd6767,
+            -2px -2px 0 #dd6767,
+            2px -2px 0 #dd6767,
+            -2px 2px 0 #dd6767,
+            2px 2px 0 #dd6767,
+            0.910868px 0.910868px 3.64347px #3CBA85;
+
     }
 
     100% {
-        transform: scale(100%);
         color: #2D8957;
         text-shadow: -0 -2px 0 #FFFFFF,
             0 -2px 0 #FFFFFF,

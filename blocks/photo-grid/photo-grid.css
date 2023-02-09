@@ -62,7 +62,7 @@
     top: 208.2px;
     background: url(../../images/ICHI-OCHA_KV-PRODUCT-\(4\).svg);
     rotate: -5.35deg;
-    animation: myAnim 5s ease 0s infinite normal both;
+    animation: myAnim 7s ease 0s infinite forwards;
 }
 
 @keyframes myAnim {
@@ -180,6 +180,23 @@
     line-height: 33px;
 }
 
+
+
+@keyframes scale {
+    0% {
+        transform: scale(100%);
+    }
+
+    50% {
+        transform: scale(95%);
+    }
+
+    100% {
+        transform: scale(100%);
+    }
+
+}
+
 .buy-page__title {
     display: block;
     position: relative;
@@ -190,8 +207,7 @@
     margin: 0 auto 10px;
     color: #2D8957;
 
-
-    animation: movingText 2s infinite both;
+    animation: scale 1s infinite linear forwards;
     font-style: italic;
     font-weight: 700;
     font-size: 35.2217px;
@@ -236,6 +252,7 @@
 .buy-page__buy-btn {
     display: block;
     color: #2D8957;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.13) 0%, rgba(255, 255, 255, 0.13) 77%, rgba(255, 255, 255, 0.5) 92%, rgba(255, 255, 255, 0.0) 100%);
     position: absolute;
     top: 164.03px;
     left: 83.4px;
@@ -254,6 +271,7 @@
     border: 0.822127px solid #FFFFFF;
     border-radius: 32.8851px;
 }
+
 
 .buy-page__buy-btn:hover {
     animation: none;
