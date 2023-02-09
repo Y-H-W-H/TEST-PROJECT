@@ -15,12 +15,33 @@
 
 }
 
-
 .photo-grid__item:hover {
-
     border: solid salmon;
+    transform: scale(110%);
+    transition: transform 0.5s ease;
+}
+
+.photo-grid__item1 {
+
+    border: solid rgba(32, 145, 66, 0.776);
     animation: movingFlare 1.1s linear both infinite;
 
+}
+
+.photo-grid__item2 {
+    margin: 0;
+    padding: 0;
+    width: 112.43px;
+    height: 115.17px;
+    font-size: 0;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+    background: linear-gradient(186.15deg, #F7FABA 0.42%, #C5EB9D 63.56%);
+
+    border-radius: 27.5689px;
+    position: relative;
+    overflow: hidden;
 }
 
 @keyframes jello {

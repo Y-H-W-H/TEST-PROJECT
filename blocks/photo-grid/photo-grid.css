@@ -10,32 +10,47 @@
 
 .first-page {
     display: flex;
+    position: fixed;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0 auto 0;
     margin: 0 auto 0;
-    background-image: url(../../images/first-page-bgr.svg);
+    background-image: url(../../images/Group\ 1.png);
     background-repeat: no-repeat;
     background-size: contain;
-    width: 100%;
-    height: 100%;
-    animation: hideSection 4s forwards linear;
-    overflow: hidden;
+    width: 300px;
+    height: 600px;
+
+
 }
 
+
+
+
+
 .buy-page {
-    overflow: hidden;
-    animation: showSection 4s forwards linear;
-    display: block;
+    visibility: hidden;
+    opacity: 0;
     margin: 0 auto 0;
     padding: 39px auto 0;
-    width: 100%;
-    height: 0;
+    width: 300px;
+    height: 600px;
     background-image: url(../../images/2pageBack.svg);
+    background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    position: fixed;
     z-index: 0;
+}
+
+.buy-page_show {
+    animation: showSection 4s forwards ease-in-out;
+}
+
+.first-page_hide {
+    animation: hideSection 1.5s forwards linear;
+
+
 }
 
 .buy-page::after {
@@ -47,22 +62,8 @@
     top: 208.2px;
     background: url(../../images/ICHI-OCHA_KV-PRODUCT-\(4\).svg);
     rotate: -5.35deg;
-    animation: myAnim 2s ease 0s infinite normal both;
+    animation: myAnim 5s ease 0s infinite normal both;
 }
-
-/* .buy-page::before {
-    content: "";
-    z-index: -1;
-    position: absolute;
-    background-repeat: no-repeat;
-    object-fit: contain;
-    width: 144.15px;
-    height: 137.84px;
-    left: 142.37px;
-    top: 500.52px;
-    background-image: url(../../images/4.svg);
-    animation: myAnim 2s ease 0s infinite normal forwards;
-} */
 
 @keyframes myAnim {
 
@@ -148,7 +149,7 @@
 .first-page:hover .photo-grid__title {
 
     transition: transform 1s both infinite;
-    animation: myAnim 1s ease both;
+    /* animation: myAnim 1s ease both; */
 
 }
 
@@ -240,7 +241,7 @@
     left: 83.4px;
 
 
-    animation: jello 2s ease 0s infinite normal forwards;
+    animation: jello 3s ease 0s infinite normal both;
     font-style: italic;
     font-weight: 700;
     font-size: 26.3081px;
@@ -265,24 +266,26 @@
 
 @keyframes showSection {
 
-    0%,
-    99% {
-        height: 0px;
+    0% {
+
+        visibility: initial;
+        opacity: 0;
     }
 
     100% {
-        height: 100%;
+        visibility: visible;
+        opacity: 1;
     }
 }
 
 @keyframes hideSection {
 
-    0%,
-    99% {
-        height: 100%;
+    0% {
+        opacity: initial;
     }
 
     100% {
-        height: 0;
+
+        opacity: 0;
     }
 }
