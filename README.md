@@ -11,6 +11,9 @@
 * Псевдоклассы и псевдоэлементы CSS
 * Flex
 * Grid
+* JavaScript
+* Анимированные элементы
+* GitHub Pages
   
 
   
