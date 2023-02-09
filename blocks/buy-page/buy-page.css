@@ -1,0 +1,113 @@
+.buy-page {
+    visibility: hidden;
+    opacity: 0;
+    margin: 0 auto 0;
+    padding: 39px auto 0;
+    width: 300px;
+    height: 600px;
+    background-image: url(../../images/2pageBack.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    z-index: 0;
+}
+
+.buy-page_show {
+    animation: showSection 4s forwards ease-in-out;
+}
+
+.buy-page::after {
+    content: "";
+    position: absolute;
+    width: 110.81px;
+    height: 109.91px;
+    right: 2.69px;
+    top: 208.2px;
+    background: url(../../images/ICHI-OCHA_KV-PRODUCT-\(4\).svg);
+    rotate: -5.35deg;
+    animation: myAnim 7s ease 0s infinite forwards;
+}
+
+.buy-page__title {
+    display: block;
+    position: relative;
+    top: 75.06px;
+    width: max-content;
+    padding: 39.82px auto 0;
+    /* margin-top: 39.82px; */
+    margin: 0 auto 10px;
+    color: #2D8957;
+
+    animation: scale 1s infinite linear forwards;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 35.2217px;
+    line-height: 41px;
+    text-align: center;
+    text-transform: uppercase;
+
+    text-shadow: -0 -2px 0 #FFFFFF,
+        0 -2px 0 #FFFFFF,
+        -0 2px 0 #FFFFFF,
+        0 2px 0 #FFFFFF,
+        -2px -0 0 #FFFFFF,
+        2px -0 0 #FFFFFF,
+        -2px 0 0 #FFFFFF,
+        2px 0 0 #FFFFFF,
+        -1px -2px 0 #FFFFFF,
+        1px -2px 0 #FFFFFF,
+        -1px 2px 0 #FFFFFF,
+        1px 2px 0 #FFFFFF,
+        -2px -1px 0 #FFFFFF,
+        2px -1px 0 #FFFFFF,
+        -2px 1px 0 #FFFFFF,
+        2px 1px 0 #FFFFFF,
+        -2px -2px 0 #FFFFFF,
+        2px -2px 0 #FFFFFF,
+        -2px 2px 0 #FFFFFF,
+        2px 2px 0 #FFFFFF,
+        -2px -2px 0 #FFFFFF,
+        2px -2px 0 #FFFFFF,
+        -2px 2px 0 #FFFFFF,
+        2px 2px 0 #FFFFFF,
+        0.910868px 0.910868px 3.64347px #3CBA85;
+}
+
+@media screen and (max-width: 350px) {
+    .buy-page__title {
+        transform: scale(88%);
+    }
+}
+
+
+.buy-page__buy-btn {
+    display: block;
+    color: #2D8957;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.13) 0%, rgba(255, 255, 255, 0.13) 77%, rgba(255, 255, 255, 0.5) 92%, rgba(255, 255, 255, 0.0) 100%);
+    position: absolute;
+    top: 164.03px;
+    left: 83.4px;
+
+
+    animation: jello 3s ease 0s infinite normal both;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 26.3081px;
+    line-height: 31px;
+    text-transform: uppercase;
+    margin: 15.09px auto;
+    width: 133.2px;
+    height: 37.11px;
+    background: linear-gradient(180deg, #F1F9B7 0%, #C6EC9E 100%);
+    border: 0.822127px solid #FFFFFF;
+    border-radius: 32.8851px;
+}
+
+.buy-page__buy-btn:hover {
+    animation: none;
+    transform: scale(107%);
+    background: salmon;
+    border: #2D8957 solid;
+    color: bisque;
+    transition: transform 0.6s;
+}

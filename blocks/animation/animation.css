@@ -1,47 +1,78 @@
-.photo-grid__item {
-    margin: 0;
-    padding: 0;
-    width: 112.43px;
-    height: 115.17px;
-    font-size: 0;
-    object-fit: cover;
-    object-position: center;
-    position: relative;
-    background: linear-gradient(186.15deg, #F7FABA 0.42%, #C5EB9D 63.56%);
+@keyframes showSection {
 
-    border-radius: 27.5689px;
-    position: relative;
-    overflow: hidden;
+    0% {
+
+        visibility: initial;
+        opacity: 0;
+    }
+
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@keyframes hideSection {
+
+    0% {
+        opacity: initial;
+    }
+
+    100% {
+
+        opacity: 0;
+    }
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(100%);
+    }
+
+    50% {
+        transform: scale(95%);
+    }
+
+    100% {
+        transform: scale(100%);
+    }
 
 }
 
-.photo-grid__item:hover {
-    border: solid salmon;
-    transform: scale(110%);
-    transition: transform 0.5s ease;
-}
+@keyframes myAnim {
 
-.photo-grid__item1 {
+    0%,
+    100% {
+        transform: rotate(0deg);
+        transform-origin: 50% 50%;
+    }
 
-    border: solid rgba(32, 145, 66, 0.776);
-    animation: movingFlare 1.1s linear both infinite;
+    10% {
+        transform: rotate(8deg);
+    }
 
-}
+    20%,
+    40%,
+    60% {
+        transform: rotate(-10deg);
+        /* transform: scale(110%); */
+    }
 
-.photo-grid__item2 {
-    margin: 0;
-    padding: 0;
-    width: 112.43px;
-    height: 115.17px;
-    font-size: 0;
-    object-fit: cover;
-    object-position: center;
-    position: relative;
-    background: linear-gradient(186.15deg, #F7FABA 0.42%, #C5EB9D 63.56%);
+    30%,
+    50%,
+    70% {
+        transform: rotate(10deg);
+        /* transform: scale(105%); */
+    }
 
-    border-radius: 27.5689px;
-    position: relative;
-    overflow: hidden;
+    80% {
+        transform: rotate(-8deg);
+    }
+
+    90% {
+        transform: rotate(8deg);
+        /* transform: scale(100%); */
+    }
 }
 
 @keyframes jello {
